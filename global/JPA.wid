@@ -1,0 +1,32 @@
+[
+        [
+            "name" : "JPA",
+            "displayName" : "JPA",
+            "category" : "jpa-workitem",
+            "description" : "",
+            "defaultHandler" : "mvel: new org.jbpm.process.workitem.jpa.JPAWorkItemHandler(\"persistenceUnit\", \"classloader\")",
+            "documentation" : "jpa-workitem/index.html",
+
+            "parameters" : [
+                                "Entity" : new StringDataType()
+                ,"Type" : new StringDataType()
+                ,"Action" : new StringDataType()
+                ,"Query" : new StringDataType()
+                ,"Id" : new StringDataType()
+                ,"QueryParameters" : new StringDataType()
+                ,"QueryResults" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Result" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "org.jbpm.contrib:jpa-workitem:7.36.0.Final"
+
+            ],
+            "icon" : "JPA.png"
+
+        ]
+
+]
